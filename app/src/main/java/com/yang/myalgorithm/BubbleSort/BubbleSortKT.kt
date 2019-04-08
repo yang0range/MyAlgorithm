@@ -1,5 +1,6 @@
 package com.yang.myalgorithm.BubbleSort
 
+import android.util.Log
 import java.util.*
 
 /**
@@ -46,8 +47,8 @@ class BubbleSortKT(private val array: IntArray) {
         }
     }
 
-    fun print(s: String): String {
-        println(s + Arrays.toString(array))
+    fun print(s: String, Tag: String): String {
+        Log.d(Tag, Arrays.toString(array))
         return s + Arrays.toString(array)
     }
 }

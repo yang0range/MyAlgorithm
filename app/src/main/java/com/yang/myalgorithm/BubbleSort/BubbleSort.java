@@ -1,5 +1,7 @@
 package com.yang.myalgorithm.BubbleSort;
 
+import android.util.Log;
+
 import java.util.Arrays;
 
 /**
@@ -50,8 +52,8 @@ public class BubbleSort {
         }
     }
 
-    public String print(String s) {
-        System.out.println(s + Arrays.toString(array));
+    public String print(String s,String Tag) {
+        Log.d(Tag,Arrays.toString(array));
         return s + Arrays.toString(array);
     }
 }

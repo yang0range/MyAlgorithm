@@ -15,4 +15,10 @@
             android:id="@+id/tv_bubblesort"
             style="@style/TextStyle"/>
 
+    <TextView style="@style/TextStyle"
+              android:text="选择排序:"/>
+    <TextView
+            android:id="@+id/tv_selectsort"
+            style="@style/TextStyle"/>
+
 </LinearLayout>
