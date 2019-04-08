@@ -1,5 +1,7 @@
 package com.yang.myalgorithm.BubbleSort
 
+import java.util.*
+
 /**
  * @author yangzc
  *	@data 2019/4/8 22:22
@@ -44,9 +46,8 @@ class BubbleSortKT(private val array: IntArray) {
         }
     }
 
-    fun print(s: String) {
-        for (i in array.indices) {
-            println(s + array[i])
-        }
+    fun print(s: String): String {
+        println(s + Arrays.toString(array))
+        return s + Arrays.toString(array)
     }
 }

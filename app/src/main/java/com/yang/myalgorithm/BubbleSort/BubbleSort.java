@@ -1,5 +1,7 @@
 package com.yang.myalgorithm.BubbleSort;
 
+import java.util.Arrays;
+
 /**
  * @author yangzc
  * @data 2019/4/8 22:21
@@ -48,9 +50,8 @@ public class BubbleSort {
         }
     }
 
-    public void print(String s) {
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(s + array[i]);
-        }
+    public String print(String s) {
+        System.out.println(s + Arrays.toString(array));
+        return s + Arrays.toString(array);
     }
 }
