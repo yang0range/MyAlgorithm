@@ -6,7 +6,7 @@ import java.util.*
 /**
  * @author yangzc
  *	@data 2019/4/8 23:46
- *	@desc
+ *	@desc 选择排序
  *
  */
 class SelectSortKT(private val array: IntArray) {
