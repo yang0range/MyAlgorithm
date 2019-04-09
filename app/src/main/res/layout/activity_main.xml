@@ -21,4 +21,10 @@
             android:id="@+id/tv_selectsort"
             style="@style/TextStyle"/>
 
+    <TextView style="@style/TextStyle"
+              android:text="插入排序:"/>
+    <TextView
+            android:id="@+id/tv_insertionsort"
+            style="@style/TextStyle"/>
+
 </LinearLayout>
