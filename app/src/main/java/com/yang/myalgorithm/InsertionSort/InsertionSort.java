@@ -16,6 +16,7 @@ public class InsertionSort {
         this.array = array;
     }
 
+    //从小到大排序
     public void insertionSort() {
         for (int i = 1; i < array.length; i++) {
             int key = array[i];
@@ -29,7 +30,7 @@ public class InsertionSort {
 
     }
 
-
+    //从大到小排序
     public void insertionSort2() {
         for (int i = 1; i < array.length; i++) {
             int key = array[i];
@@ -40,7 +41,7 @@ public class InsertionSort {
             }
             array[j + 1] = key;
         }
-
+    }
     }
 
     //将arr[i] 插入到arr[0]...arr[i - 1]中
