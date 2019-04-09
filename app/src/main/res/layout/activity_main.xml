@@ -27,4 +27,9 @@
             android:id="@+id/tv_insertionsort"
             style="@style/TextStyle"/>
 
+    <TextView style="@style/TextStyle"
+              android:text="二分插入排序:"/>
+    <TextView
+            android:id="@+id/tv_binaryinsertionsort"
+            style="@style/TextStyle"/>
 </LinearLayout>

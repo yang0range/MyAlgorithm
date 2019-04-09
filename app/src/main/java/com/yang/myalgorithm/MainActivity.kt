@@ -2,6 +2,7 @@ package com.yang.myalgorithm
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.yang.myalgorithm.BinaryInsertSort.BinaryInsertSort
 import com.yang.myalgorithm.BubbleSort.BubbleSort
 import com.yang.myalgorithm.InsertionSort.InsertionSort
 import com.yang.myalgorithm.SelectSort.SelectSort
@@ -35,7 +36,14 @@ class MainActivity : AppCompatActivity() {
         insertionSort.print("从小到大", "插入排序")
         tv_insertionsort.text = insertionSort.print("从小到大", "插入排序")
         insertionSort.insertionSort2()
-        tv_insertionsort.text = tv_insertionsort.text.toString()+"\n"+insertionSort.print("从大到小", "插入排序")
-
+        tv_insertionsort.text = tv_insertionsort.text.toString() + "\n" + insertionSort.print("从大到小", "插入排序")
+        //二分插入排序
+        val binaryInsertSort = BinaryInsertSort(array)
+        binaryInsertSort.sort()
+        binaryInsertSort.print("从小到大", "二分插入排序")
+        tv_binaryinsertionsort.text = binaryInsertSort.print("从小到大", "二分插入排序")
+        binaryInsertSort.sort2()
+        binaryInsertSort.print("从大到小", "二分插入排序")
+        tv_binaryinsertionsort.text = tv_binaryinsertionsort.text.toString()+"\n"+binaryInsertSort.print("从大到小", "二分插入排序")
     }
 }
