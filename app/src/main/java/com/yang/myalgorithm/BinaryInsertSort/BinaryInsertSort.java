@@ -7,7 +7,7 @@ import java.util.Arrays;
 /**
  * @author yangzc
  * @data 2019/4/10 0:09
- * @desc 二分插入排序
+ * @desc 二分法插入排序
  */
 public class BinaryInsertSort {
     private int[] array;
@@ -15,7 +15,7 @@ public class BinaryInsertSort {
     public BinaryInsertSort(int[] array) {
         this.array = array;
     }
-
+    //从小到大
     public  void sort() {
         for (int i = 1; i < array.length; i++) {
             int temp = array[i];
@@ -36,6 +36,7 @@ public class BinaryInsertSort {
         }
     }
 
+    //从大到小
     public  void sort2() {
         for (int i = 1; i < array.length; i++) {
             int temp = array[i];
