@@ -42,7 +42,6 @@ public class InsertionSort {
             array[j + 1] = key;
         }
     }
-    }
 
     //将arr[i] 插入到arr[0]...arr[i - 1]中
     public static void insertion_sort(int[] arr) {
