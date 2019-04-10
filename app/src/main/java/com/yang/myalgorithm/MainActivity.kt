@@ -6,6 +6,7 @@ import com.yang.myalgorithm.BinaryInsertSort.BinaryInsertSort
 import com.yang.myalgorithm.BubbleSort.BubbleSort
 import com.yang.myalgorithm.InsertionSort.InsertionSort
 import com.yang.myalgorithm.SelectSort.SelectSort
+import com.yang.myalgorithm.ShellSort.ShellSort
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -45,7 +46,17 @@ class MainActivity : AppCompatActivity() {
         binaryInsertSort.sort2()
         binaryInsertSort.print("从大到小", "二分插入排序")
         tv_binaryinsertionsort.text =
-       tv_binaryinsertionsort.text.toString() + "\n" + binaryInsertSort.print("从大到小", "二分插入排序")
+            tv_binaryinsertionsort.text.toString() + "\n" + binaryInsertSort.print("从大到小", "二分插入排序")
+        //希尔排序
+        val shellsort = ShellSort(array)
+        shellsort.sort()
+        shellsort.print("从小到大", "希尔排序")
+        tv_shellsort.text = shellsort.print("从小到大", "希尔排序")
+        shellsort.sort2()
+        shellsort.print("从大到小", "希尔排序")
+        tv_shellsort.text =
+            tv_shellsort.text.toString() + "\n" + shellsort.print("从大到小", "希尔排序")
+
 
     }
 }
