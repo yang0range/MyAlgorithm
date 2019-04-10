@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.yang.myalgorithm.BinaryInsertSort.BinaryInsertSort
 import com.yang.myalgorithm.BubbleSort.BubbleSort
+import com.yang.myalgorithm.HeapSort.HeapSort
 import com.yang.myalgorithm.InsertionSort.InsertionSort
 import com.yang.myalgorithm.SelectSort.SelectSort
 import com.yang.myalgorithm.ShellSort.ShellSort
@@ -56,6 +57,11 @@ class MainActivity : AppCompatActivity() {
         shellsort.print("从大到小", "希尔排序")
         tv_shellsort.text =
             tv_shellsort.text.toString() + "\n" + shellsort.print("从大到小", "希尔排序")
+        //堆排序
+        val heapsort = HeapSort(array)
+        heapsort.sort()
+        heapsort.print("从小到大", "堆排序")
+        tv_heapsort.text = heapsort.print("从小到大", "堆排序")
 
 
     }

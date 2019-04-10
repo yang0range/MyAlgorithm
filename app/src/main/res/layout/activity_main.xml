@@ -38,4 +38,10 @@
     <TextView
             android:id="@+id/tv_shellsort"
             style="@style/TextStyle"/>
+
+    <TextView style="@style/TextStyle"
+              android:text="堆排序:"/>
+    <TextView
+            android:id="@+id/tv_heapsort"
+            style="@style/TextStyle"/>
 </LinearLayout>
