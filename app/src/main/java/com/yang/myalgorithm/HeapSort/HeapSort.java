@@ -70,7 +70,7 @@ public class HeapSort {
     }
 
 
-    
+
     public String print(String s, String Tag) {
         Log.d(Tag, Arrays.toString(array));
         return s + Arrays.toString(array);
