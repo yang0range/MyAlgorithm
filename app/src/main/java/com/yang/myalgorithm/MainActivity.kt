@@ -44,6 +44,8 @@ class MainActivity : AppCompatActivity() {
         tv_binaryinsertionsort.text = binaryInsertSort.print("从小到大", "二分插入排序")
         binaryInsertSort.sort2()
         binaryInsertSort.print("从大到小", "二分插入排序")
-        tv_binaryinsertionsort.text = tv_binaryinsertionsort.text.toString()+"\n"+binaryInsertSort.print("从大到小", "二分插入排序")
+        tv_binaryinsertionsort.text =
+       tv_binaryinsertionsort.text.toString() + "\n" + binaryInsertSort.print("从大到小", "二分插入排序")
+
     }
 }
