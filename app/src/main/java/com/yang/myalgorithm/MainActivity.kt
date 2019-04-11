@@ -6,6 +6,7 @@ import com.yang.myalgorithm.BinaryInsertSort.BinaryInsertSort
 import com.yang.myalgorithm.BubbleSort.BubbleSort
 import com.yang.myalgorithm.HeapSort.HeapSort
 import com.yang.myalgorithm.InsertionSort.InsertionSort
+import com.yang.myalgorithm.MergeSort.MergeSort
 import com.yang.myalgorithm.SelectSort.SelectSort
 import com.yang.myalgorithm.ShellSort.ShellSort
 import kotlinx.android.synthetic.main.activity_main.*
@@ -62,6 +63,11 @@ class MainActivity : AppCompatActivity() {
         heapsort.sort()
         heapsort.print("从小到大", "堆排序")
         tv_heapsort.text = heapsort.print("从小到大", "堆排序")
+        //归并排序
+        val mergeSort = MergeSort(array)
+        mergeSort.mergesort()
+        mergeSort.print("从小到大","归并排序")
+        tv_mergesort.text = mergeSort.print("从小到大","归并排序")
 
 
     }

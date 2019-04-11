@@ -44,4 +44,10 @@
     <TextView
             android:id="@+id/tv_heapsort"
             style="@style/TextStyle"/>
+
+    <TextView style="@style/TextStyle"
+              android:text="归并排序:"/>
+    <TextView
+            android:id="@+id/tv_mergesort"
+            style="@style/TextStyle"/>
 </LinearLayout>
