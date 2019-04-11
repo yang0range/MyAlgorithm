@@ -50,4 +50,10 @@
     <TextView
             android:id="@+id/tv_mergesort"
             style="@style/TextStyle"/>
+
+    <TextView style="@style/TextStyle"
+              android:text="快速排序:"/>
+    <TextView
+            android:id="@+id/tv_quicksort"
+            style="@style/TextStyle"/>
 </LinearLayout>

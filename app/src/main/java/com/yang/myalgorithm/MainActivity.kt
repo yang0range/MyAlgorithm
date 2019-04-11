@@ -7,6 +7,7 @@ import com.yang.myalgorithm.BubbleSort.BubbleSort
 import com.yang.myalgorithm.HeapSort.HeapSort
 import com.yang.myalgorithm.InsertionSort.InsertionSort
 import com.yang.myalgorithm.MergeSort.MergeSort
+import com.yang.myalgorithm.QuickSort.QuickSort
 import com.yang.myalgorithm.SelectSort.SelectSort
 import com.yang.myalgorithm.ShellSort.ShellSort
 import kotlinx.android.synthetic.main.activity_main.*
@@ -68,7 +69,12 @@ class MainActivity : AppCompatActivity() {
         mergeSort.mergesort()
         mergeSort.print("从小到大","归并排序")
         tv_mergesort.text = mergeSort.print("从小到大","归并排序")
-
+        //快速排序
+        val quicksort = QuickSort(array)
+        quicksort.sort(0,array.size-1)
+        quicksort.print("从小到大","快速排序")
+        tv_quicksort.text = quicksort.print("从小到大","快速排序")
+        
 
     }
 }
